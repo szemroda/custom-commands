@@ -1,0 +1,23 @@
+{
+  "name": "custom-commands",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "bin": {
+    "git-feat": "bin/git-feat.ts",
+    "git-pr": "bin/git-pr.ts"
+  },
+  "scripts": {
+    "link": "bun link"
+  },
+  "dependencies": {
+    "@inquirer/prompts": "^8.2.0",
+    "commander": "^14.0.3"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  }
+}
